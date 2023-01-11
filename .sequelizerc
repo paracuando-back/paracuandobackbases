@@ -1,0 +1,9 @@
+// Esto hará que sequelize-cli use la configuración establecida para realizar los comandos referentes a migraciones, creaciones de modelos, etc.
+
+const path = require('path');
+module.exports = {
+  'config': path.resolve('database/config', 'config.js'), //.json by default
+  'models-path': path.resolve('database', 'models'),
+  'seeders-path': path.resolve('database', 'seeders'),
+  'migrations-path': path.resolve('database', 'migrations')
+}
